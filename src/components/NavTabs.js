@@ -6,8 +6,6 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <>
-    <h2>Sarah La Grue</h2>
-
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
