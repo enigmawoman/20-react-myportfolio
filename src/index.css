@@ -22,3 +22,31 @@ body {
   color: var(--tekhelet);
   line-height: 1.6;
 }
+
+
+
+.cardContainer {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.project-card{
+  margin: 1rem;
+  padding: 1rem;
+}
+
+button {
+  padding: 1rem;
+}
+
+.cardButtons {
+  display: flex;
+  display: inline;
+  justify-content: space-between;
+}
+
+
+.myButton {
+  margin: 1px;
+}

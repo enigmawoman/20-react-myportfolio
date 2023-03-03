@@ -4,9 +4,10 @@ import Resume from './pages/Resume';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import myData from './data/MyData';
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('Portfolio');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -14,7 +15,7 @@ export default function PortfolioContainer() {
       return <AboutMe />;
     }
     if (currentPage === 'Portfolio') {
-      return <Portfolio />;
+      return <Portfolio  />;
     }
     if (currentPage === 'Resume') {
       return <Resume />;
