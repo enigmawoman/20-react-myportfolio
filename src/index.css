@@ -68,6 +68,6 @@ button {
 
 .myButton {
   margin: 1px;
-  background-color: aqua;
+  background-color: var(--canary);
   color:#3d287fff
 }
