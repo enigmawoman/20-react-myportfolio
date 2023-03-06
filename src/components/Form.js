@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
 import { validateEmail } from '../utils/helpers';
 
@@ -15,10 +16,10 @@ const handleInputChange = (e) => {
 const { target } = e;
 const inputType = target.name;
 const inputValue = target.value;
-if (inputType === 'email') {
-setEmail(inputValue);
-} else if (inputType === 'userName') {
+if (inputType === 'userName') {
 setUserName(inputValue);
+} else if (inputType === 'email') {
+setEmail(inputValue);
 } else {
 setMessage(inputValue);
 }
@@ -26,7 +27,7 @@ setMessage(inputValue);
 
 const handleEmailBlur = () => {
 if (!email) {
-setUserNameError('Email address required'); 
+setEmailError('Email address required'); 
 } else if (email && !validateEmail(email)) {
 setEmailError('Email is invalid');
 } else {
@@ -36,7 +37,7 @@ setEmailError('');
 
 const handleUserNameBlur = () => {
 if (!userName) {
-setUserNameError('Username is required');
+setUserNameError('Full Name is required');
 } else {
 setUserNameError('');
 }
@@ -52,7 +53,7 @@ setMessageError('');
 
 const handleFormSubmit = (e) => {
 e.preventDefault();
-if (!email || !userName || !message) {
+if (!userName || !email || !message) {
 setErrorMessage('Please enter required information before submitting the form');
 return;
 }
@@ -63,33 +64,32 @@ setEmail('');
 };
 
 return (
-<div>
-<p>Hello {userName}</p>
+<>
 <form className="form">
-<input
-       value={email}
-       name="email"
-       onChange={handleInputChange}
-       onBlur={handleEmailBlur}
-       type="email"
-       placeholder="email"
-     />
-{emailError && (
-<div>
-<p className="error-text">{emailError}</p>
-</div>
-)}
 <input
        value={userName}
        name="userName"
        onChange={handleInputChange}
        onBlur={handleUserNameBlur}
        type="text"
-       placeholder="username"
+       placeholder="Full name"
      />
 {userNameError && (
 <div>
 <p className="error-text">{userNameError}</p>
+</div>
+)}
+<input
+       value={email}
+       name="email"
+       onChange={handleInputChange}
+       onBlur={handleEmailBlur}
+       type="email"
+       placeholder="Email"
+     />
+{emailError && (
+<div>
+<p className="error-text">{emailError}</p>
 </div>
 )}
 <input
@@ -105,16 +105,16 @@ return (
 <p className="error-text">{messageError}</p>
 </div>
 )}
-<button type="button" onClick={handleFormSubmit}>
+<Button className="myButton" variant="primary" onClick={handleFormSubmit}>
 Submit
-</button>
+</Button>
 </form>
 {errorMessage && (
 <div>
-<p className="error-text">{errorMessage}</p>
+<p className="form-error-text">{errorMessage}</p>
 </div>
 )}
-</div>
+</>
 );
 }
 

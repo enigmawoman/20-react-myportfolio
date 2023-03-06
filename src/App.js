@@ -5,8 +5,9 @@ import Header from "./components/Header";
 
 const App = () => 
 <div className='page-container'>
+<Header/>
   <div className='content-wrap'>
-      <Header/>
+      
       <PortfolioContainer />
   </div>  
   <Footer />

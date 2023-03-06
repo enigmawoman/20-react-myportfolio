@@ -26,10 +26,13 @@ body {
 .page-container {
   position: relative;
   min-height: 100vh;
+  margin: 20px;
+  padding: 40px;
 }
 
 .content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+  padding-bottom: 2.5rem;
+  margin-bottom: 4rem;    /* Footer height */
 }
 
 .header{
@@ -41,7 +44,13 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
+  height: 2.5rem; 
+  display: block;      /* Footer height */
+}
+
+.footer p {
+  text-align: center;
+  margin: 5px;
 }
 
 .cardContainer {
@@ -51,8 +60,16 @@ body {
 }
 
 .project-card{
-  margin: 1rem;
-  padding: 1rem;
+  background-color: #fff;
+  border-style: solid;
+  border-color: var(--dark);
+  border-width: 3px;
+  border-radius: 10px;
+  padding:10px;
+  margin:8px;
+  font-size:17px;
+  font-family:'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
+  flex:0 0 300px;
 }
 
 button {
@@ -71,3 +88,91 @@ button {
   background-color: var(--canary);
   color:#3d287fff
 }
+
+.card-image {
+  margin: auto;
+  margin-bottom: 20px;
+  width:250px;
+  height:200px;
+  object-fit: contain;/*images to fit the given dimension keeping aspect ratio*/
+  overflow: hidden;
+}
+
+
+
+/*Make the event images uniform*/
+.event-image img{
+  margin: auto;
+  margin-bottom: 20px;
+  width:250px;
+  height:200px;
+  object-fit: cover;/*images to fit the given dimension keeping aspect ratio*/
+  overflow: hidden;
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input {
+  width: 800px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+}
+.form-error-text{
+  text-align: center;
+}
+
+.contact-page h1{
+  text-align: center;
+  margin: 3rem;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-info a {
+  color: var(--tekhelet);
+  margin: 5px;
+  padding: 6px;
+}
+
+.portfolio-page h1 {
+  text-align: center;
+  margin: 40px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.about-me p {
+  background-color: var(--african-violet);
+  padding: 50px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.about-me img {
+  border-radius: 200px;
+}
+
+.website-image {
+  width:560px;
+  object-fit: cover;
+}
+
