@@ -3,8 +3,8 @@ import Form from '../Form.js'
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className='contact-page'>
+      <h1>Send me a message</h1>
       <Form />
       <p>
        

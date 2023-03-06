@@ -5,13 +5,9 @@ import myData from '../data/MyData';
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className='portfolio-page'>
       <h1>Portfolio</h1>
       <ProjectCard myData={myData} />
-      <p>
-        my cool stuff - say Hello World
-        
-      </p>
     </div>
   );
 }
