@@ -10,10 +10,12 @@ export default function Footer() {
 
         <a href="https://www.linkedin.com/in/sarah-la-grue-8677311a/"><FaLinkedin /></a>
       </div>
+      <div>
       <p>
         Made with love by Sarah <FaHeart />
         
       </p>
+      </div>
       
     </div>
   );
