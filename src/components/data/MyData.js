@@ -1,3 +1,5 @@
+// data for the portfolio cards
+
 const myData = [
     {
       id: 1,
@@ -26,7 +28,7 @@ const myData = [
     {
       id: 4,
       name: "Windows XP ",
-      image:"/assets/images/windows-xp.png",
+      image:"https://github.com/enigmawoman/Windows-XP-memories/raw/main/assets/images/windows-xp.png",
       text: "Recreation of the Windows XP login, start up and desktop - personal project to help develop my CSS skills - entire desktop is designed in CSS.",
       gitHub: "https://github.com/enigmawoman/Windows-XP-memories",
       deployLink: "https://enigmawoman.github.io/Windows-XP-memories/"
@@ -42,7 +44,7 @@ const myData = [
     {
       id: 6,
       name: "Tech Blog",
-      image:"/assets/images/techblog.png",
+      image:"https://github.com/enigmawoman/14-MVC-TechBlog/raw/main/assets/images/localhost_3001.png",
       text: "Using the MVC paradigm to produce a tech blog using Node.js, express.js, mySQL, Sequelize and Handlebars.js.",
       gitHub: "https://github.com/enigmawoman/14-MVC-TechBlog",
       deployLink: "https://protected-hollows-97045.herokuapp.com/"

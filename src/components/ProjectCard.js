@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-
+// data from the portfolio page is passed in via props and each of the projects are passed in using the map function which will auto generate a card for each project
 function ProjectCard(props) {
   return (
     <div className='cardContainer'>

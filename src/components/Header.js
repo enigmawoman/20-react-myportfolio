@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className='header'>
       <div className='sarah'>
-        <img  src={me}/>
+        <img  alt='developer' src={me}/>
       </div>
       <div className='header-title'>
       <h1>Sarah La Grue</h1>
@@ -16,7 +16,7 @@ export default function Header() {
       </p>
       </div>
       <div>
-        <img src={unicorn}/>
+        <img  alt='avatar of developer' src={unicorn}/>
       </div>
     </div>
   );

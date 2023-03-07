@@ -125,8 +125,6 @@ button {
   overflow: hidden;
 }
 
-
-
 /*Make the event images uniform*/
 .event-image img{
   margin: auto;
@@ -185,6 +183,7 @@ button {
   padding: 50px;
   margin-left: 20px;
   border-radius: 20px;
+  margin-top: 20px;
 }
 
 .about-me img {
@@ -192,6 +191,46 @@ button {
   border-color: var(--tekhelet);
   border-width: 3px;
   border-radius: 200px;
+}
+
+.pre-ex {
+  background-color: white;
+  border-style: solid;
+  border-color: var(--tekhelet);
+  border-width: 3px;
+  padding: 50px;
+  margin-left: 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.pre-ex h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.pre-ex p {
+  margin-bottom: 40px;
+}
+
+.carousel-control-prev {
+  background-color: var(--african-violet);
+  width: 5%;
+  border-radius: 200px;
+}
+
+.carousel-control-next {
+  background-color: var(--african-violet);
+  width: 5%;
+  border-radius: 200px;
+}
+
+.carousel-indicators .active {
+  background-color: var(--african-violet);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--african-violet);
 }
 
 .website-image {
@@ -238,6 +277,31 @@ button {
     justify-content: space-between;
     margin: 50px;
   }
+  .pro-list {
+    background-color: var(--tekhelet);
+    color: #fff;
+    border-style: solid;
+    border-color: var(--tekhelet);
+    border-width: 3px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 30px;
+  
+  }
+  .form input {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+  }
+  
+  .form .message-text {
+    height: 300px; 
+  }
 }
 
 @media(max-width: 694px) {
@@ -257,5 +321,60 @@ button {
     align-items: center;
     justify-content: space-between;
     margin: 50px;
+  }
+
+  .pro-list {
+    background-color: var(--tekhelet);
+    color: #fff;
+    border-style: solid;
+    border-color: var(--tekhelet);
+    border-width: 3px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 30px;
+    width: 250px;
+  
+  }
+  .resume-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+  }
+  .about-me p {
+    background-color: var(--vivid-sky-blue);
+    border-style: solid;
+    border-color: var(--tekhelet);
+    border-width: 3px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  .pre-ex {
+    background-color: white;
+    border-style: solid;
+    border-color: var(--tekhelet);
+    border-width: 3px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .form input {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+  }
+  
+  .form .message-text {
+    height: 300px; 
   }
 }
