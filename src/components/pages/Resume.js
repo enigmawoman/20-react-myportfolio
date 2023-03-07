@@ -1,5 +1,7 @@
 import React from 'react';
+// import button component from bootstrap
 import Button from 'react-bootstrap/Button';
+// importing the frameowrk icons from react-icons
 import { 
   DiHtml5,
   DiCss3,
@@ -30,6 +32,7 @@ export default function Resume() {
       <h2>Proficiencies</h2>
       <ul className='pro-list'>
         <div>
+          {/* this is where the icon components are brought into the list elements */}
         <li><DiHtml5/> - HTML</li>
         <li><DiCss3/> - CSS</li>
         <li><DiJsBadge/> - JavaScript</li>
@@ -54,6 +57,7 @@ export default function Resume() {
 
         
       </ul>
+      {/* button component for the link to my resume */}
       <p><a href="https://drive.google.com/file/d/12phDnRx-whj7oGUTyaY8L-jzzsksoWIO/view?usp=sharing"><Button className="myButton" variant="primary">View my Resume</Button></a></p>
       
     </div>

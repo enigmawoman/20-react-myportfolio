@@ -1,9 +1,11 @@
+// using state to manage the page state
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-
+// using a regex to validate email addresses
 import { validateEmail } from '../utils/helpers';
 
 function Form() {
+    // setting the default states
 const [email, setEmail] = useState('');
 const [userName, setUserName] = useState('');
 const [message, setMessage] = useState('');
@@ -12,6 +14,7 @@ const [emailError, setEmailError] = useState('');
 const [userNameError, setUserNameError] = useState('');
 const [messageError, setMessageError] = useState('');
 
+// handle the input into the form
 const handleInputChange = (e) => {
 const { target } = e;
 const inputType = target.name;
@@ -25,6 +28,7 @@ setMessage(inputValue);
 }
 };
 
+// handle when a user leaves an input field without information or valid email address
 const handleEmailBlur = () => {
 if (!email) {
 setEmailError('Email address required'); 
@@ -34,7 +38,7 @@ setEmailError('Email is invalid');
 setEmailError('');
 }
 };
-
+// handle when a user leaves an input field with information
 const handleUserNameBlur = () => {
 if (!userName) {
 setUserNameError('Full Name is required');
@@ -42,7 +46,7 @@ setUserNameError('Full Name is required');
 setUserNameError('');
 }
 };
-
+// handle when a user leaves an input field with information
 const handleMessageBlur = () => {
 if (!message) {
 setMessageError('message is required');
@@ -50,7 +54,7 @@ setMessageError('message is required');
 setMessageError('');
 }
 };
-
+// if the input fields are empty and user clicks submit -  a warning is generated
 const handleFormSubmit = (e) => {
 e.preventDefault();
 if (!userName || !email || !message) {
@@ -94,6 +98,7 @@ return (
 )}
 <input
        value={message}
+       className="message-text"
        name="password"
        onChange={handleInputChange}
        onBlur={handleMessageBlur}

@@ -1,12 +1,14 @@
+// importing carousel from react bootstrap
 import Carousel from 'react-bootstrap/Carousel';
 import website from '../assets/images/website.png'
 
 function MyCarousel() {
     return (
       <Carousel>
+        {/* each carousel item*/}
         <Carousel.Item>
 
-            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/TMD_9xLZBng" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></p>
+            <p align="center"><iframe className='iframe' width="560" height="315" src="https://www.youtube.com/embed/TMD_9xLZBng" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></p>
         </Carousel.Item>
         <Carousel.Item>
              <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/6507WZ-xM1E" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></p>
