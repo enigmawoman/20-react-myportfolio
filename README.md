@@ -98,7 +98,7 @@ The code files are fully commented, to explain the flow and logic of the code, s
 
 ### Deployment Link.
 
-<a href="https://github.com/enigmawoman/20-react-myportfolio"><b>Deployed portfolio link</b></a>
+<a href="https://enigmawoman.github.io/20-react-myportfolio/"><b>Deployed portfolio link</b></a>
 
 ### Screenshot of deployed application
 
