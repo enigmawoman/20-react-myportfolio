@@ -58,7 +58,9 @@ export default function Resume() {
         
       </ul>
       {/* button component for the link to my resume */}
-      <p><a href="https://drive.google.com/file/d/12phDnRx-whj7oGUTyaY8L-jzzsksoWIO/view?usp=sharing"><Button className="myButton" variant="primary">View my Resume</Button></a></p>
+       <p><a href="https://docs.google.com/document/d/1qiYg4BpDdpgehmmlnzVEJZ7ssv8nQKvU-O7ReK7ukCA/preview"><Button className="myButton" variant="primary">View my Resume</Button></a></p>
+
+      <iframe src="https://docs.google.com/document/d/1qiYg4BpDdpgehmmlnzVEJZ7ssv8nQKvU-O7ReK7ukCA/preview" width="850" height="1150" allow="autoplay"></iframe>
       
     </div>
   );
